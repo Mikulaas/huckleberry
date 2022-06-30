@@ -29,7 +29,7 @@ header {
 }
 
 main {
-  padding: 40px 0;
+  padding: 40px 0 40px 24px;
   background-color: var(--dark-light);
 }
 
@@ -42,7 +42,7 @@ main {
 }
 
 .intro-chunk p {
-  max-width: 325px;
+  max-width: 320px;
 }
 
 .intro-chunk strong {
@@ -55,7 +55,7 @@ main {
 }
 
 .card {
-  padding: 4px 16px;
+  padding: 4px 24px;
 
   margin-left: -24px;
   background-color: var(--white);
@@ -63,8 +63,8 @@ main {
 }
 
 .indented-heading {
-  padding: 16px 24px;
-  margin-left: -24px;
+  padding: 16px 32px;
+  margin-left: -32px;
   margin-top: 0;
 
   font-size: 1.25rem;
