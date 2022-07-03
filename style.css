@@ -24,7 +24,7 @@ body {
 }
 
 header {
-  padding: 48px 24px 40px;
+  /* padding: 48px 24px 40px; */
   border-bottom: 4px solid var(--border);
 }
 
@@ -35,13 +35,13 @@ main {
 
 .max-width-wrapper {
   max-width: 100%;
-  width: 656px;
+  /* width: 656px; */
 
   margin-left: auto;
   margin-right: auto;
 }
 
-.intro-chunk p {
+.intro-chunk {
   max-width: 320px;
 }
 
@@ -72,4 +72,79 @@ main {
   background-color: var(--gold);
   border-bottom: 4px solid var(--gold-dark);
   width: fit-content;
+}
+
+/* START OF COURSE STUFF */
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* this is only MAX-WIDTH wrapper, so DO NOT SET WIDTH next time..!!! */
+.max-width-wrapper {
+  max-width: 800px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.intro-chunk p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+/* THIS IS OK according to my solution (lines 52-55), but its needed to pick value from readme (32px instead of 40px)*/
+.intro-chunk .title {
+  font-size: 2rem;
+  margin-bottom: 48px;
+}
+
+.intro-chunk {
+  padding: 96px 0 48px;
+  max-width: 350px;
+}
+
+main {
+  padding: 96px 0;
+  background-color: var(--dark-light);
+}
+
+header {
+  border-bottom: 8px solid var(--border);
+}
+
+.card {
+  background-color: var(--white);
+  padding: 24px;
+  margin: -24px;
+  border-bottom: 8px solid var(--border);
+}
+
+.indented-heading {
+  background-color: var(--gold);
+  margin-left: -32px;
+  padding: 16px 32px;
+  width: fit-content;
+
+  /* To tidy up the space between top of the .card and gold title*/
+  margin-top: -16px;
+  border-bottom: 8px solid var(--gold-dark);
+}
+
+.card p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+/* Tag last paragraph and reset margin bottom */
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.intro-chunk strong {
+  color: var(--green);
 }
